@@ -1,9 +1,10 @@
-FROM berset/alpine-erlang-docker
+FROM alpine
 
 ADD rebar /usr/local/bin/
 
 RUN apk add make wget git grep
 RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
+    erlang \
     erlang-public-key erlang-syntax-tools erlang-erl-docgen erlang-gs erlang-observer erlang-ssh \
     erlang-ose erlang-cosfiletransfer erlang-runtime-tools erlang-os-mon erlang-tools erlang-cosproperty \
     erlang-common-test erlang-dialyzer erlang-edoc erlang-otp-mibs erlang-crypto erlang-costransaction \
