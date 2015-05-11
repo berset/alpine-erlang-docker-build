@@ -2,7 +2,7 @@ FROM alpine
 
 ADD rebar /usr/local/bin/
 
-RUN apk add make wget git grep
+RUN apk add --update-cache make wget git grep
 RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
     erlang \
     erlang-public-key erlang-syntax-tools erlang-erl-docgen erlang-gs erlang-observer erlang-ssh \
