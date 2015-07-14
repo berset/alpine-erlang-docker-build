@@ -1,6 +1,7 @@
 FROM alpine
 
 ADD rebar /usr/local/bin/
+ADD validate_config /usr/local/bin/
 
 RUN apk add --update-cache make wget git grep openssh-client
 RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
