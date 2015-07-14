@@ -5,7 +5,7 @@ ADD validate_config /usr/local/bin/
 
 RUN apk add --update-cache make wget git grep openssh-client
 RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
-    erlang \
+    erlang=18.0.1-r0 \
     erlang-public-key erlang-syntax-tools erlang-erl-docgen erlang-gs erlang-observer erlang-ssh \
     erlang-ose erlang-cosfiletransfer erlang-runtime-tools erlang-os-mon erlang-tools erlang-cosproperty \
     erlang-common-test erlang-dialyzer erlang-edoc erlang-otp-mibs erlang-crypto erlang-costransaction \
